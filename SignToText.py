@@ -1,10 +1,21 @@
 import mediapipe as mp
 import cv2
+import pandas as pd
+import tensorflow as tf
+import numpy as np
+from PIL import Image
 
 from google.protobuf.json_format import MessageToDict
 
 print("Mediapipe version:", mp.__version__)
 print("OpenCV version:", cv2.__version__)
+
+model_path = r"C:\Users\tonat\OneDrive\Documents\GitHub\SignToText\ASL.h5\ASL.h5"
+model = tf.keras.models.load_model(model_path)
+
+print("Model loaded successfully")
+print("Model SUmmary:")
+model.summary()
 
 def initialization():
     # Hands
@@ -15,9 +26,12 @@ def initialization():
     # Webcam
     cam = cv2.VideoCapture(0)
 
-    return mp_hands, hands, mp_drawing, cam
+    # ASL dataset
+    dataset = None
 
-def processing(mp_hands, hands, mp_drawing, cam):
+    return mp_hands, hands, mp_drawing, cam, dataset
+
+def processing(mp_hands, hands, mp_drawing, cam, dataset):
     while cam.isOpened():
         success, img = cam.read()
         if not success:
@@ -59,8 +73,10 @@ def processing(mp_hands, hands, mp_drawing, cam):
 def main():
     print("Starting SignToText...")
 
-    mp_hands, hands, mp_drawing, cam = initialization()
-    processing(mp_hands, hands, mp_drawing, cam)
+
+
+    # mp_hands, hands, mp_drawing, cam, dataset = initialization()
+    # processing(mp_hands, hands, mp_drawing, cam, dataset)
     
 
 
