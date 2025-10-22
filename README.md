@@ -7,14 +7,14 @@ An option to run the application as a browser extension will also be added.
 
 ---
 
-## 🚀 Overview
+## Overview
 
 SignToText uses **computer vision** and **machine learning** to interpret hand gestures captured through a live camera feed.  
 By leveraging **TensorFlow**, **OpenCV**, and **MediaPipe**, the system detects hand landmarks, interprets gestures, and outputs corresponding text.
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 - **Python**
 - **TensorFlow**
@@ -24,14 +24,14 @@ By leveraging **TensorFlow**, **OpenCV**, and **MediaPipe**, the system detects 
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 > **Note:** Setup instructions are currently **TBD**.  
 > This section will be updated as the project matures and installation requirements are finalized.
 
 ---
 
-## 🎯 Usage
+## Usage
 
 1. Run the application.  
 2. Allow access to your system camera.  
@@ -42,7 +42,7 @@ By leveraging **TensorFlow**, **OpenCV**, and **MediaPipe**, the system detects 
 
 ---
 
-## ✨ Features
+## Features
 
 - Real-time ASL alphabet recognition  
 - Hand tracking using MediaPipe  
@@ -52,7 +52,7 @@ By leveraging **TensorFlow**, **OpenCV**, and **MediaPipe**, the system detects 
 
 ---
 
-## 🧩 Roadmap
+## Roadmap
 
 - [ ] Complete alphabet recognition  
 - [ ] Add support for common words and phrases  
@@ -61,14 +61,14 @@ By leveraging **TensorFlow**, **OpenCV**, and **MediaPipe**, the system detects 
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome.  
 Feel free to contact me at tonatiuhula8@gmail.com
 
 ---
 
-## 📷 Acknowledgments
+## Acknowledgments
 
 - [MediaPipe](https://github.com/google/mediapipe) for hand-tracking models  
 - [TensorFlow](https://www.tensorflow.org/) for machine learning tools  
