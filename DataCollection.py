@@ -1,0 +1,1 @@
+# Create my own dataset of ASL signs, the model I'm trying isn't working
